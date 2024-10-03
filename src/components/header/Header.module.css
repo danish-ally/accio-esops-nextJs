@@ -1,0 +1,136 @@
+.header {
+    background-color: #39395F;
+    color: white;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 999;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+}
+.contactInfo p {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 25px;
+    line-height: normal;
+}
+.contactInfo p span {
+    font-weight: 700;
+}
+.callButton {
+    width: 142px;
+    height: 26px;
+    border-radius: 4px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #416A59;
+    font-size: 14px;
+    font-weight: 700;
+}
+.callButton:hover {
+    background-color: #009157;
+    color: #fff;
+}
+
+/* ContactForm.module.css */
+.formContainer {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.checkboxLabel {
+    width: max-content;
+}
+.formContainer h2 {
+    text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 350px;
+  margin-top: -40px;
+  text-transform: uppercase;
+}
+
+
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer label {
+    margin-top: 10px;
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="email"],
+.formContainer select {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-top: 0px;
+}
+
+.formContainer .checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.formContainer button {
+    background-color: #FA4659;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.formContainer button:hover {
+    background-color: #ce3847;
+    color: #fff;
+}
+.formContainer label input {
+    margin-right: 5px;
+}
+.datetimeinput {
+  border-radius: 4px;
+  border: 1px solid #000;
+  margin-top: 5px;
+}
+.datetimeinput input {
+  padding: 8px;
+}
+.errorMessage {
+    color: red;
+    font-size: 14px;
+}
+.flex1 .rdtPicker {
+  z-index: 99 !important;
+  bottom: 0;
+}
+.rowbox.flex.justify-between input {
+  background: none !important;
+}
+@media(max-width:767px) {
+    .header {
+        display: none !important;
+    }
+
+}

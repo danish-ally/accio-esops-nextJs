@@ -1,0 +1,239 @@
+/* Navbar.module.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1E373E;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar nav img {
+    width: 220px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav li {
+    font-size: 18px;
+    font-style: normal;
+    margin: 0px 15px;
+    font-weight: 400;
+}
+.navbar nav li:last-child {
+    margin-right: 0;
+    margin-left: 40px !important;
+}
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0px;
+    display: block;
+    position: relative;
+}
+.navbar nav ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    display: none;
+    background: #FF5858;
+}
+.navbar nav ul li:hover a:after {
+    display: block;
+}
+.navbar nav ul li:hover a {
+    color: #FF5858;
+}
+.navbar nav ul li.active a {
+    color: #FF5858;
+}
+.navbar nav ul li.active a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    display: none;
+    background: #FF5858;
+}
+
+/* ContactForm.module.css */
+ .arrowb {
+    position: relative;
+ }
+ .arrow_img {
+        position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+.formContainer {
+    border-radius: 4px;
+    background: #FFF;
+    padding: 20px;
+    max-width: 450px;
+    margin-left: auto;
+}
+
+.formContainer h2 {
+    text-align: left;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 400;
+}
+.checkboxLabel {
+    width: max-content;
+}
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer label {
+    margin-top: 10px;
+    font-size: 14px;
+font-weight: 400;
+margin-bottom: 5px;
+line-height: normal;
+width: 100%;
+  display: block;
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="email"],
+.formContainer select,
+.formContainer textarea {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 0px;
+    background: #fff;
+    width: 100%;
+    appearance: none;
+    color: #333;
+}
+.formContainer input[type="text"]::placeholder,
+.formContainer input[type="email"]::placeholder,
+.formContainer select::placeholder,
+.formContainer textarea::placeholder {
+    color: #a0a6b2;
+}
+.formContainer .checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.formContainer button {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #FA4659;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.formContainer button:hover {
+    background-color: #ce3847;
+    color: #fff;
+}
+.rowbox.flex.justify-between input {
+  background: none !important;
+}
+.datetimeinput {
+    border-radius: 4px;
+    border: 1px solid #000;
+    margin-top: 5px;
+}
+
+.datetimeinput input {
+    padding: 8px;
+}
+
+.css-13cymwt-control {
+    border-color: #000 !important;
+    margin-top: 6px !important;
+    min-height: 43px !important;
+}
+
+.css-1u9des2-indicatorSeparator {
+    background-color: #000 !important;
+}
+
+.css-1xc3v61-indicatorContainer {
+    color: #000 !important;
+}
+
+.demoActive {
+    color: #A9C25D;
+    height: 50%;
+}
+
+.demoInctive{
+    background-color: #416A59 !important;
+    height: 100%;
+}
+
+@media(max-width:767px) {
+    .formContainer {
+        max-width: 100%;
+    }
+}
+
+.errorMessage {
+    color: red;
+    margin-bottom: -10px;
+    font-size: 12px;
+}
+.logoMenu h2 {
+    width: 25px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active-new {
+  position: relative !important;
+}
+.active-new a {
+  color: #A9C25D !important;
+}
+
+.active-new:after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #A9C25D !important;
+}
+
+@media(max-width:767px) {
+    .formContainer {
+        max-width: 100%;
+    }
+}
+@media(max-width:767px) {
+    .navbar {
+        display: none !important;
+    }
+    .formContainer h2 {
+  max-width: 350px;
+  margin-top: -40px;
+}
+}

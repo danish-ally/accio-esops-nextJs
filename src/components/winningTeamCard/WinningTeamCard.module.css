@@ -1,0 +1,32 @@
+.teamCard{
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+}
+
+.imageContainer {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.objectContain {
+    object-fit: cover;
+}
+
+.infoContainer {
+    margin-left: 20px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+}

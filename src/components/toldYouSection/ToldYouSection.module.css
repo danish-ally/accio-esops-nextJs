@@ -1,0 +1,29 @@
+.arrowb {
+    position: relative;
+ }
+ .arrow_img {
+        position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+ .formContainer label {
+   margin-bottom: 6px;
+   width: 100%;
+  display: block;
+
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="email"],
+.formContainer select,
+.formContainer textarea {
+    appearance: none;
+    color: #333;
+}
+.formContainer input[type="text"]::placeholder,
+.formContainer input[type="email"]::placeholder,
+.formContainer select::placeholder,
+.formContainer textarea::placeholder {
+    color: #a0a6b2;
+}

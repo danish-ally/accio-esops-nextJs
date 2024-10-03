@@ -1,0 +1,145 @@
+/* ContactForm.module.css */
+.formContainer {
+    border-radius: 4px;
+    background: #FFF;
+    padding: 20px;
+    max-width: 450px;
+    margin-left: auto;
+}
+
+.formContainer h2 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+.checkboxLabel {
+    width: max-content;
+}
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer label {
+    font-size: 14px;
+   font-weight: 400;
+   margin-top: 10px;
+   margin-bottom: 6px;
+   width: 100%;
+  display: block;
+
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="email"],
+.formContainer select,
+.formContainer textarea {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 0px;
+    background: #fff;
+    width: 100%;
+    appearance: none;
+    color: #333;
+}
+.formContainer input[type="text"]::placeholder,
+.formContainer input[type="email"]::placeholder,
+.formContainer select::placeholder,
+.formContainer textarea::placeholder {
+    color: #a0a6b2;
+}
+/* .formContainer select {
+    background:#fff url(../../public/down.png) no-repeat center;
+    background-size: 20px 20px;
+} */
+ .arrowb {
+    position: relative;
+ }
+ .arrow_img {
+        position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+.formContainer .checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.formContainer button {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #FA4659;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.formContainer button:hover {
+    background-color: #ce3847;
+    color: #fff;
+}
+
+.datetimeinput {
+    border-radius: 4px;
+    border: 1px solid #000;
+    margin-top: 5px;
+}
+
+.datetimeinput input {
+    padding: 8px;
+}
+
+.css-13cymwt-control {
+    border-color: #000 !important;
+    margin-top: 6px !important;
+    min-height: 43px !important;
+}
+
+.css-1u9des2-indicatorSeparator {
+    background-color: #000 !important;
+}
+
+.css-1xc3v61-indicatorContainer {
+    color: #000 !important;
+}
+
+.demoActive {
+    color: #A9C25D;
+    height: 50%;
+}
+
+.demoInctive{
+    background-color: #416A59 !important;
+    height: 100%;
+}
+.rowbox.flex.justify-between input {
+  background: none !important;
+}
+@media(max-width:767px) {
+    .formContainer {
+        max-width: 100%;
+    }
+}
+
+.errorMessage {
+    color: red;
+    margin-bottom: -10px;
+    font-size: 12px;
+}
+.flex1 .rdtPicker {
+  z-index: 99 !important;
+  bottom: 46px !important;
+}
+@media(max-width:767px) {
+    .formContainer {
+        max-width: 100%;
+    }
+}
